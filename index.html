@@ -64,6 +64,10 @@
           </h1>
           <p class="lead my-4 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, dignissimos?</p>
           <a href="#pricing" class="btn btn-secondary btn-lg">Buy Now</a>
+          <!-- open sidebar / offcanvas -->
+          <a href="#sidebar" class="d-block mt-3" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar">
+            Explore my other books
+          </a>
         </div>
         <div class="col-md-5 text-center d-none d-md-block">
           <!-- tooltip -->
@@ -312,6 +316,12 @@
                 <i class="bi bi-envelope-fill text-secondary"></i>
               </span>
               <input type="text" id="email" class="form-control" placeholder="e.g. mario@example.com" />
+              <!--tooltip-->
+              <span class="input-group-text">
+                <span class="tt" data-bs-placement="bottom" title="Enter an Email we can contact you with.">
+                  <i class="bi bi-question-circle text-muted"></i>
+                </span>
+              </span>
             </div>
             <label for="name" class="form-label">Name:</label>
             <div class="mb-4 input-group">
@@ -319,7 +329,14 @@
                 <i class="bi bi-person-fill text-secondary"></i>
               </span>
               <input type="text" id="name" class="form-control" placeholder="e.g. Mario" />
+              <!--tooltip-->
+              <span class="input-group-text">
+                <span class="tt" data-bs-placement="bottom" title="Enter a Name.">
+                  <i class="bi bi-question-circle text-muted"></i>
+                </span>
+              </span>
             </div>
+
             <label for="subject" class="form-label">What is your question about?</label>
             <div class="mb-4 input-group">
               <span class="input-group-text">
@@ -346,6 +363,65 @@
 
 
   <!-- get updates / modal trigger -->
+  <section class="bg-light">
+    <div class="container">
+      <div class="text-center">
+        <h2>Stay in The Loop</h2>
+        <p class="lead">Get the latest updates as they happen...</p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+          <p class="text-muted my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero exercitationem voluptatibus porro, hic asperiores fuga illo voluptates obcaecati deleniti veritatis sunt saepe quasi deserunt ex ipsum. Est possimus, aspernatur, vitae eligendi rem odit quaerat, ipsum pariatur ratione maxime delectus fuga minus accusamus dolores iusto maiores accusantium cumque magnam placeat quia!</p>
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reg-modal">
+            Register for Updates
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- modal itself -->
+  <div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal-title">Get the Latest Updates</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, exercitationem laboriosam nihil minus voluptatibus harum aliquam consequatur pariatur inventore dignissimos illum excepturi ratione ipsum sit iusto alias eligendi fugit laborum?</p>
+          <label for="modal-email" class="form-label">Your email address:</label>
+          <input type="text" class="form-control" id="modal-email" placeholder="e.g. mario@example.com">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <!-- side panel / offcanvas -->
+ <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="sidebar-label">My Other Books</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In minima ducimus excepturi quasi tempore fugit quis voluptatibus aut error possimus, tenetur natus magni quam voluptatem quae eligendi repudiandae delectus eaque!</p>
+    <!-- dropdown -->
+    <div class="dropdown mt-3">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="book-dropdown" data-bs-toggle="dropdown">
+        Choose a book title
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="book-dropdown">
+        <li><a class="dropdown-item" href="#">Become a React Superhero</a></li>
+        <li><a class="dropdown-item" href="#">Conquering Vue.js</a></li>
+        <li><a class="dropdown-item" href="#">Levelling up Your Next.js</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
 
 
    

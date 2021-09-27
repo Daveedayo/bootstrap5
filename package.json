@@ -1,0 +1,22 @@
+{
+  "name": "bootstrap5",
+  "version": "1.0.0",
+  "description": "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",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Daveedayo/bootstrap5.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Daveedayo/bootstrap5/issues"
+  },
+  "homepage": "https://github.com/Daveedayo/bootstrap5#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.1"
+  }
+}
